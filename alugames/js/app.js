@@ -20,6 +20,6 @@ function alterarStatus(id){
     }
     let botaoAdd = document.querySelector("dashboard__item__button--return");
     botaoAdd.addEventListener("click", function(){
-        event.preventDefault();
+        Event.preventDefault();
     });
 }
