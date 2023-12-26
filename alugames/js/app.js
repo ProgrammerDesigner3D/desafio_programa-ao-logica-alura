@@ -17,6 +17,9 @@ function alterarStatus(id){
         botao.textContent = 'Devolver';
         ///test
         //test1
+        //problema de conflito resolvido
+        //problema este gerado na hora de upar programação concluida usei master ao invéz do main com isso criou
+        //uma nova branch gerando conflito quando tentava subir o projeto
         
     }
 }
