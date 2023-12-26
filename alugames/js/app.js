@@ -11,10 +11,11 @@ function alterarStatus(id){
         botao.textContent = 'Alugar';
 
     }else{
-        
+
         image.classList.add('dashboard__item__img--rented');
         botao.classList.add('dashboard__item__button--return');
         botao.textContent = 'Devolver';
+        ///test
         
     }
 }
