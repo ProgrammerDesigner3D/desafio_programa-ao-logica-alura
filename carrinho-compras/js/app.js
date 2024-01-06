@@ -26,15 +26,20 @@ function adicionar(params) {
     campoTotal.textContent = `R$ ${totalGeral}`;
     document.getElementById('quantidade').value = 0;
 
-    //criando um tratamento de erro com questão a quantidade quando for apertado o botão com Zero quantidade
-    if (quantidade == 0) {
-        quantidade = 0;                
-        preco = 0;
-        alert('Por favor digite a quantidade');
-        carrinho.innerHTML = carrinho.innerHTML + `<section class="carrinho__produtos__produto">
-    <span class="texto-azul">0x</span> nenhum <span class="texto-azul">R$0</span>
-  </section>`;       
+    if(isNaN(!quantidade)||quantidade <= 0){
+        alert("Insira uma quantidade válida");
+        return;
     }
+
+    //criando um tratamento de erro com questão a quantidade quando for apertado o botão com Zero quantidade
+    //if (quantidade == 0) {
+    //    quantidade = 0;                
+    //    preco = 0;
+    //    alert('Por favor digite a quantidade');
+    //    carrinho.innerHTML = carrinho.innerHTML + `<section class="carrinho__produtos__produto">
+    //    <span class="texto-azul">0x</span> nenhum <span class="texto-azul">R$0</span>
+    //    </section>`;       
+    //}
 }
 
 function limpar() {
