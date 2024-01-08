@@ -26,20 +26,27 @@ function adicionar(params) {
     campoTotal.textContent = `R$ ${totalGeral}`;
     document.getElementById('quantidade').value = 0;
 
-    if(isNaN(!quantidade)||quantidade <= 0){
-        alert("Insira uma quantidade válida");
-        return;
-    }
+    //if (!produto || produto.trim() === "") {
+    //    alert("Selecione um produto válido.");
+    //    return;
+    //}
+//
+    //if(isNaN(!quantidade)||quantidade <= 0){
+    //    alert("Insira uma quantidade válida");
+    //    return;
+    //}
 
     //criando um tratamento de erro com questão a quantidade quando for apertado o botão com Zero quantidade
-    //if (quantidade == 0) {
-    //    quantidade = 0;                
-    //    preco = 0;
-    //    alert('Por favor digite a quantidade');
-    //    carrinho.innerHTML = carrinho.innerHTML + `<section class="carrinho__produtos__produto">
-    //    <span class="texto-azul">0x</span> nenhum <span class="texto-azul">R$0</span>
-    //    </section>`;       
-    //}
+    if (quantidade == 0) {
+        quantidade = 0;                
+        preco = 0;
+        let avisoErro = `nenhum`;
+        alert('Por favor digite a quantidade');
+        let trocaAlgoritmo = carrinho.innerHTML;
+        carrinho.innerHTML = `<section class="carrinho__produtos__produto">
+        <span class="texto-azul">${quantidade}x</span> ${avisoErro} <span class="texto-azul">R${preco}</span>
+        </section>`;
+    }
 }
 
 function limpar() {
