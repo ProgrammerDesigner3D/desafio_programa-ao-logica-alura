@@ -1,0 +1,10 @@
+body {
+    min-height: 100vh;
+    height: auto;
+    background: white;
+    padding: 7vh 8vw 5vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin-left: 30%;
+    margin-top: 10%;
+  }

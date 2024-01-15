@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/_reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <script src="js/par_impar.js"></script>
     <title>Verificar par ou impar</title>
 </head>
 <body>
-    <form action="/action_page.php">
-        <label for="fname">Verificar se o número é par ou impar:</label><br>
+    <form action="/verifica-par-impar">
+        <label for="name">Verificar se o número é par ou impar:</label><br>
         <input type="number" id="numero" name="par-impar" placeholder="Digite o número"><br>        
         <input type="button" onclick="verificarParOuImpar('numero')" value="Verificar">
         <input type="button" onclick="limpar()" value="Limpar">
