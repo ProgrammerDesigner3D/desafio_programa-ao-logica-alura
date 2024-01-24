@@ -1,10 +1,11 @@
 let amigos = [];
 
-function adicionar(params) {
+function adicionar() {
     let amigo = document.getElementById('nome-amigo');
     let lista = document.getElementById('lista-amigos');
-    amigos.push(amigo.value);
 
+    amigos.push(amigo.value);
+    
     if (lista.textContent == '') {
         lista.textContent = amigo.value;
     } else {
@@ -12,6 +13,9 @@ function adicionar(params) {
     }
 
     amigo.value = '';
+
+    atualizarLista();
+    AtualizarSorteio();
 }
 
 function embaralhar(lista) {
@@ -25,7 +29,9 @@ function embaralhar(lista) {
 }
 
 function sortear() {
+
     embaralhar(amigos);
+
     let sorteio = document.getElementById('lista-sorteio');
 
         for (let i = 0; i < amigos.length; i++) {
@@ -37,6 +43,29 @@ function sortear() {
         
     }
 
+}
+
+function excluirAmigo(index) {
+    amigos.splice(index, 1);
+    atualizarLista();
+    AtualizarSorteio();
+}
+
+function atualizarLista() {
+    let lista = document.getElementById('lista-amigos');
+    lista.innerHTML = '';
+
+    for(let i = 0; i < amigos.length; i++){
+        let paragrafo = document.createElement('p');
+        paragrafo.textContent = amigos[i];
+
+        paragrafo.addEventListener('click', function(){
+            excluirAmigo(i);
+        });
+
+        lista.appendChild(paragrafo);
+
+    }
 }
 
 function reiniciar() {
