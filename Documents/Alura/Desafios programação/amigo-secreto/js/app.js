@@ -2,6 +2,7 @@ let amigos = [];
 
 function adicionar() {
     let amigo = document.getElementById('nome-amigo');
+
     if (amigo.value == '') {
         alert('Informe o nome do amigo!');
         return;
@@ -12,20 +13,41 @@ function adicionar() {
         return;
     }
 
+    if (amigos.includes(amigo.value.toLowerCase())) {
+        alert('Nome já adicionado em Minusculo');
+        return;
+    }
+
+    if (amigos.includes(amigo.value.toUpperCase())) {
+        alert('Nome já adicionado em Maiúsculo!');
+        return;
+    }
+
+    
     let lista = document.getElementById('lista-amigos');
+    
 
     amigos.push(amigo.value);
+
+    
     
     if (lista.textContent == '') {
         lista.textContent = amigo.value;
     } else {
         lista.textContent = lista.textContent + ', ' + amigo.value;
+    }    
+
+    //alert(amigos.join());// usado o join para imprimir os nomes contido no array
+    //condição para manter a lista com números pares após passar a contagem de 4 amigos adicionado
+    if (parseInt(amigos.length) > 4 && parseInt(amigos.length)%2 !== 0 ) {
+        alert("Por favor, adicione mais um nome para a lista do sorteio se mantendo em números pares !")
     }
 
     amigo.value = '';
 
     atualizarLista();
     AtualizarSorteio();
+    
 }
 
 function embaralhar(lista) {
@@ -84,8 +106,9 @@ function atualizarLista() {
 }
 
 function reiniciar() {
-    amigos = [];
+    amigos.length = 0;    
     document.getElementById('lista-amigos').innerHTML = '';
     document.getElementById('lista-sorteio').innerHTML = '';
+    document.getElementById("nome-amigo").value = '';
     location.reload();
 }
