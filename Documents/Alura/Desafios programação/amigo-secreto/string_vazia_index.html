@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body{
+            background-color: rgb(183, 206, 206);
+            margin-top: 10%;
+            margin-left: 20%;
+        }
+        input[type=text] {
+            width: 50%;
+            background-color: #af4c4c;
+            color: rgb(247, 255, 139);
+            padding: 14px 20px;
+            margin: 18px 50px;
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+            font-size: larger;
+            cursor: pointer;
+        }
+        label{
+            color: rgb(71, 53, 30);
+            font-size: x-large;
+        }
+
+        button{
+            margin-top: 1%;
+            margin-left: 25%;
+            background-color: rgb(75, 60, 21);
+            color: whitesmoke;
+            padding: 15px 32px;
+            border-radius: 15px;
+
+        }
+
+        .button{
+            transition-duration: 0.4s;
+        }
+
+        .button:hover{
+            background-color: coral;
+            color: white;
+        }
+        p{
+            color: red;
+            font-size: 1000%;
+            margin-top: 5%;
+            margin-left: 15%;
+        }
+    </style>
+    <script src="js/verifica_string.js" ></script>
+    <title>string é vazia ?</title>
+</head>
+<body>
+
+    <form action="action_number">
+        <label for="Fname"></label>
+        <input type="text" id="string-digitado" name="Fname"  size="80" placeholder="digite algo" > <br>
+        <button onclick="verificaString()" id="bResultado" type="button" class="button"> Click<br>É ou não uma String ?</button>
+    </form>
+    <br><br>
+    <p id="resultado"></p>
+    
+</body>
+</html>
