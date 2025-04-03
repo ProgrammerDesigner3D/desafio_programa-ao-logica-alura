@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/_reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/converter_temperatura.js"></script>
+    <title>Converter Temperatura</title>
+</head>
+<body>
+    <form>
+        <label for="title">Converter escala</label><br><br>
+        <input type="number" id="tnum" name="temperatura" size="5">
+        <label for="escolhaTemp">Escolha a escala  </label>
+        <select name="escala" id="esc">
+            <option value="celsius">Graus em Celsius</option>
+            <option value="fahrenheit">Graus em Fahrenheit</option>
+        </select>
+        <br><br>
+        <input type="button" onclick="converterTemperatura()" value="Converter">
+        <br><br><br>
+        <p id="saida"></p>
+    </form>
+</body>
+</html>

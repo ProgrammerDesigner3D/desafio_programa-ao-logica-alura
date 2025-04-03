@@ -6,6 +6,27 @@ body {
     color: #fff;
 }
 
+body .containerCalcular h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 5rem;
+    line-height: 110%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+body .calculaInterno{
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+
+}
+
+
 header {
     width: 1200px;
     margin: 2rem auto;
@@ -144,3 +165,4 @@ form button {
     font-size: 2rem;
     padding-left: 1.5rem;
 }
+

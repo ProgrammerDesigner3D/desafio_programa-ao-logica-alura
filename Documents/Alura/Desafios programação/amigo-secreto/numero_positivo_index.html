@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        html{
+            color: bisque;
+        }
+        body{
+            margin-top: 10%;
+            margin-left: 20%;
+        }
+
+        label{
+            color: rgb(71, 53, 30);
+            font-size: x-large;
+        }
+
+        button{
+            margin-top: 1%;
+            margin-left: 25%;
+            background-color: rgb(75, 60, 21);
+            color: whitesmoke;
+            padding: 15px 32px;
+            border-radius: 15px;
+
+        }
+        p{
+            color: red;
+            font-size: 1000%;
+            margin-top: 5%;
+            margin-left: 15%;
+        }
+
+    </style>
+    <script src="js/numero_positivo.js" ></script>
+    <title>Numero positivo ou Negativo !</title>
+</head>
+<body>
+
+    <form action="action_number">
+        <label for="Fname">Digite um número</label>
+        <input type="number" id="numero-digitado" name="Fname"  size="80"><br>
+        <button onclick="positivoNegativo()" type="button" class="button"> Ver Resultado</button>
+    </form>
+    <br><br>
+    <p id="resultado"></p>
+    
+</body>
+</html>

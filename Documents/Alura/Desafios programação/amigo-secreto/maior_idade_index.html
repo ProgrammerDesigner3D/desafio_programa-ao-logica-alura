@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <script src="js/maior_idade.js"></script>
+    <style>
+        body{
+            background-color: rgb(207, 207, 228);
+            margin-top: 10%;
+            margin-left: 20%;
+        }
+
+        label{
+            color: rgb(71, 53, 30);
+            font-size: x-large;
+        }
+
+        input[type=number] {
+            width: 50%;
+            background-color: #af4c4c;
+            color: rgb(247, 255, 139);
+            padding: 14px 20px;
+            margin: 18px 50px;
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+            font-size: larger;
+            cursor: pointer;
+        }
+
+        button{
+            margin-top: 1%;
+            margin-left: 25%;
+            background-color: rgb(104, 42, 14);
+            color: whitesmoke;
+            padding: 15px 32px;
+            border-radius: 15px;
+
+        }
+        p{
+            color: red;
+            font-size: 1000%;
+            margin-top: 3%;
+            margin-left: 1px;
+        }
+        
+    </style>
+    <title>Maior ou Menor Idade</title>
+</head>
+<body>
+
+    <form action="action_number">
+        <label for="Fname"></label>
+        <input type="number" id="numero-digitado" name="Fname"  size="80" placeholder="Digite a sua idade" > <br>
+        <button onclick="verIdade()" id="bResultado" type="button" class="button"> Maior ou Menor<br>Idade</button>
+    </form>
+    <br><br>
+    <p id="resultado"></p>
+    
+</body>
+</html>

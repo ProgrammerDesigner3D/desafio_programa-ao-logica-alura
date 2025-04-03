@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body{
+            background-color: rgb(226, 223, 179);
+            margin-top: 10%;
+            margin-left: 35%;
+
+        }
+        button{
+            margin-left: 14%;
+        }
+    </style>    
+    <script src="js/calcularMedia.js"></script>    
+    <title>Calcula Media</title>
+</head>
+<body>
+
+    <form action="CalcMedia">
+        <label for="text">Calcula Média</label><br><br>
+        <input type="number" id="primeiroNumero" name="adicionaNumero" placeholder="Adicione número">
+        <label for="text">X</label>
+        <input type="number" id="segundoNumero" name="adNumero" placeholder="Adicione número">
+    </form>
+    <br>
+    <button type="button" id="myBtn" onclick="calculaMedia()">Calcular</button><br><br>
+    <p id="resultado"></p><br>
+    
+    
+</body>
+</html>
