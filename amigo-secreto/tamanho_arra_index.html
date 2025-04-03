@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body{
+            background-color: beige;
+            margin-top: 3%;
+            margin-left: 20%;
+        }
+    </style>
+    <script src="js/tamanho_array.js"></script>
+    <title>Tamanho do Array</title>
+</head>
+<body>
+
+    <form action="inserirArray">
+        <label for="name">Digite palavras e números</label><br><br>
+        <input type="text" id="entrada" name="inserindoPalavras" placeholder="digite aqui">
+        <button type="button" id="adicionando" onclick="adicionandoConteudo()">Inserindo conteudo</button><br><br>
+        <button type="button" id="verifica" onclick="verificaTamanho()">Qual o tamanho total ?</button>
+
+    </form>
+    <br><br><br>
+    <p id="resultado"></p><br>
+    <button type="button" id="segBtn" onclick="apagaMedia()">Apagar Média</button><br><br>
+    <button type="button" id="terBtn" onclick="mostraConteudo()">Mostra conteudo do Array</button><br><br>
+    <p id="mostrArray"></p><br><br>
+
+    <section class="section--results">
+        <article>
+            <button type="button" id="listBtn" onclick="mostrarPoiscaoElemento()" >Mostrar itens incluidos por posição</button>
+          <p id="nameList"></p><br>
+          <div class="friends__container">
+            <p id="lista-add"></p>
+          </div>
+        </article>  
+    </section><br><br>
+    
+</body>
+</html>

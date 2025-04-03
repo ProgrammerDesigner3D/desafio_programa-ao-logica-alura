@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/_reset.css">
+    <link rel="stylesheet" href="./styles/style.p.css">
+    <title>Captura de Valores do Formulário</title>
+</head>
+<body>
+    <p><h1><strong>Captura de valores</strong></h1></p>
+<form id="meuForm">
+    <p><br><br><label for="campoNome">Nome:</label>
+    <input type="text" id="campoNome" name="nome"></p><br>
+    
+    <p><label for="campoIdade">Idade:</label>
+    <input type="number" id="campoIdade" name="idade"></p><br>
+
+    <p><button type="button" onclick="capturarValores()">Capturar Valores</button></p><br><br><br><br>
+  
+    <p><div id='mostraNome'><span>Seu nome e idade irão aparecer aqui.</span></div></p><br>
+    <br><br><p><button type="button" onclick="apaga()">Limpa Valores</button></p>
+</form>
+
+<script src="./js/script_captura_valores.js"></script>
+</body>
+</html>
