@@ -11,6 +11,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 
+
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,6 +24,7 @@
     .body {
         padding: 2rem calc((100vw - 1086px)/2);
     }
+    
 }
 
 .main {
